@@ -43,7 +43,7 @@
         .timeline { border-left: 2px solid var(--secondary); padding-left: 20px; margin-left: 10px; }
         .time-item { margin-bottom: 20px; position: relative; }
         .time-item::before { content: ''; width: 12px; height: 12px; background: var(--primary); position: absolute; left: -27px; top: 6px; border-radius: 50%; }
-
+.weapon-category { background: var(--secondary); padding: 5px 15px; border-radius: 4px; display: inline-block; margin-bottom: 10px; font-weight: bold; }
         footer { text-align: center; padding: 40px; color: #666; font-size: 0.9em; }
     </style>
 </head>
@@ -162,8 +162,98 @@
         </table>
     </section>
 
+<section id="full-weapon-list">
+        <h2>4. 全武器ティアリスト & 詳細解説 (Full Arsenal)</h2>
+        <p>対人戦闘性能、拠点破壊能力、操作性の3軸で評価した最新の武器リストです。</p>
+
+        <table class="tier-table">
+            <thead>
+                <tr>
+                    <th>Tier</th>
+                    <th>武器名</th>
+                    <th>種類</th>
+                    <th>特徴と詳細評価</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tier-s">S</td>
+                    <td><strong>Dynasty</strong><br>(ダイナスティ)</td>
+                    <td>AR</td>
+                    <td><b>絶対的王者。</b> 中距離の集弾率が全武器中トップ。3倍スコープ標準装備で、序盤から終盤までこれ1本で戦い抜ける。弱点がない。</td>
+                </tr>
+                <tr>
+                    <td class="tier-s">S</td>
+                    <td><strong>Big Rig</strong><br>(ビッグリグ)</td>
+                    <td>LMG</td>
+                    <td><b>補給物資限定。</b> 圧倒的火力。防衛側がこれを手にすると、拠点の門を一歩も通さず封鎖できる。攻撃側なら拠点の壁ごと敵を粉砕。</td>
+                </tr>
+                <tr>
+                    <td class="tier-s">S</td>
+                    <td><strong>Sunshot Bow</strong><br>(サンショット)</td>
+                    <td>Special</td>
+                    <td><b>補給物資限定。</b> 着弾時に爆発する矢を放つ。対人ダメージも高いが、密集している敵を一度に吹き飛ばし、拠点の罠を一掃できる。</td>
+                </tr>
+                <tr>
+                    <td class="tier-a">A</td>
+                    <td><strong>Ranger</strong><br>(レンジャー)</td>
+                    <td>SR</td>
+                    <td><b>長距離の支配者。</b> ヘッドショット時の倍率が極めて高く、敵のシールドブレイカー運搬役を遠くから安全に処理できる唯一の武器。</td>
+                </tr>
+                <tr>
+                    <td class="tier-a">A</td>
+                    <td><strong>Vanguard</strong><br>(ヴァンガード)</td>
+                    <td>SMG</td>
+                    <td><b>室内戦の鬼。</b> 連射速度が凄まじく、拠点内や狭い通路での遭遇戦ではDynastyすら圧倒するDPSを叩き出す。</td>
+                </tr>
+                <tr>
+                    <td class="tier-a">A</td>
+                    <td><strong>Doomsplitter</strong><br>(ドゥーム)</td>
+                    <td>Siege</td>
+                    <td><b>拠点破壊兵器。</b> 対人には弱いが、最終目的であるアンカーストーンを削る速度は全武器No.1。勝利には必須の「攻め」の武器。</td>
+                </tr>
+                <tr>
+                    <td class="tier-a">A</td>
+                    <td><strong>Titan-4</strong><br>(タイタン)</td>
+                    <td>SG</td>
+                    <td><b>ワンパンの可能性。</b> 4発装填のショットガン。全弾命中時の破壊力が凄まじく、特に防衛側が角で待ち構える際に猛威を振るう。</td>
+                </tr>
+                <tr>
+                    <td class="tier-b">B</td>
+                    <td><strong>Stormcaster</strong><br>(ストーム)</td>
+                    <td>Energy</td>
+                    <td>電磁フィールドを生成。敵の動きを遅延させるため、防衛の通路封鎖には役立つが、直撃ダメージが低くキルは取りにくい。</td>
+                </tr>
+                <tr>
+                    <td class="tier-b">B</td>
+                    <td><strong>Longhorn</strong><br>(ロングホーン)</td>
+                    <td>HG</td>
+                    <td><b>サブ武器の王。</b> 対マウントダメージにボーナスがあり、逃げる敵やマウントで接近する敵を止める性能に長けている。</td>
+                </tr>
+                <tr>
+                    <td class="tier-b">B</td>
+                    <td><strong>Obsidian-9</strong><br>(オブシディアン)</td>
+                    <td>DMR</td>
+                    <td>セミオートライフル。中～遠距離で強いが、Dynastyの汎用性とRangerの破壊力に挟まれ、器用貧乏な立ち位置。</td>
+                </tr>
+                <tr>
+                    <td class="tier-c">C</td>
+                    <td><strong>Spitfire</strong><br>(スピットファイア)</td>
+                    <td>SMG</td>
+                    <td>初期装備に多い軽量SMG。リコイル（反動）が激しく、Vanguardが手に入るまでの繋ぎ。</td>
+                </tr>
+                <tr>
+                    <td class="tier-c">C</td>
+                    <td><strong>Ironbark</strong><br>(アイアンバーク)</td>
+                    <td>Bolt-Action</td>
+                    <td>単発のクロスボウ。音が静かだが弾速が遅すぎ、現状の高速メタでは当てるのが至難の業。</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <section id="strategy">
-        <h2>4. 勝利を掴むための戦略（Tips）</h2>
+        <h2>5. 勝利を掴むための戦略（Tips）</h2>
         <div class="grid">
             <div class="card">
                 <h3>武器の選択</h3>
@@ -181,7 +271,7 @@
     </section>
 
     <section id="pro-tips">
-        <h2>5. 海外プロの隠しテクニック</h2>
+        <h2>6. 海外プロの隠しテクニック</h2>
         <div class="critical">
             <strong>環境キルの活用：</strong> 崖際で戦う際は、ノックバック系のスキルで敵を落とす「Ring-out」を狙いましょう。ソウルオーブが奈落に落ちるため、敵は30秒間復帰できなくなります。
         </div>
