@@ -23,7 +23,13 @@
         table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #1a1a2e; border-radius: 8px; overflow: hidden; }
         th, td { border: 1px solid #0f3460; padding: 15px; text-align: left; }
         th { background-color: var(--primary); color: white; }
-        .tier-s { color: #ff4d4d; font-weight: bold; font-size: 1.2em; }
+/* ティアリスト表 */
+        .tier-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #1a1a2e; font-size: 0.95em; }
+        .tier-table th, .tier-table td { border: 1px solid #0f3460; padding: 12px; text-align: left; }
+        .tier-table th { background-color: var(--primary); color: white; white-space: nowrap; }
+        .tier-s { background: rgba(255, 77, 77, 0.2); color: #ff4d4d; font-weight: bold; text-align: center !important; font-size: 1.5em; }
+        .tier-a { background: rgba(255, 165, 0, 0.1); color: #ffa500; font-weight: bold; text-align: center !important; font-size: 1.5em; }
+        .tier-b { background: rgba(255, 255, 0, 0.1); color: #ffff00; font-weight: bold; text-align: center !important; font-size: 1.5em; }
         
         /* カードデザイン */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; }
@@ -85,39 +91,72 @@
 
     <section id="wardens">
         <h2>3. 最強ウォーデン ティアリスト (ver 1.0.4)</h2>
-        <table>
+<table class="tier-table">
             <thead>
                 <tr>
                     <th>Tier</th>
                     <th>ウォーデン</th>
-                    <th>役割</th>
-                    <th>海外メタ評価</th>
+                    <th>役割 (Role)</th>
+                    <th>特徴・アビリティ</th>
+                    <th>推奨武器</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="tier-s">S</td>
-                    <td>Scarlet (スカーレット)</td>
+                    <td><strong>Scarlet</strong><br>(スカーレット)</td>
                     <td>Assault</td>
-                    <td>透明化による裏取り。防衛プレイヤーを無視してアンカーストーンを削る「バックドア」のプロ。</td>
+                    <td>ステルスと壁抜けが可能。敵の防衛を無視してアンカーストーンを削る「バックドア」の最強格。</td>
+                    <td>Vanguard</td>
                 </tr>
                 <tr>
                     <td class="tier-s">S</td>
-                    <td>Redmane (レッドメイン)</td>
+                    <td><strong>Redmane</strong><br>(レッドメイン)</td>
                     <td>Destruction</td>
-                    <td>構造物破壊に特化。敵が固めた壁をスキル一つで粉砕し、強行突破を可能にする。</td>
+                    <td>構造物破壊のスペシャリスト。広範囲の壁を一度に破壊するアルティメットは拠点攻めに必須。</td>
+                    <td>Doomsplitter</td>
+                </tr>
+                <tr>
+                    <td class="tier-s">S</td>
+                    <td><strong>Atticus</strong><br>(アティカス)</td>
+                    <td>Assault</td>
+                    <td>雷を操る攻撃型。敵の動きを止める「スタン」能力が強力で、対人戦闘力が全キャラ中No.1。</td>
+                    <td>Dynasty</td>
                 </tr>
                 <tr>
                     <td class="tier-a">A</td>
-                    <td>Kai (カイ)</td>
+                    <td><strong>Kai</strong><br>(カイ)</td>
                     <td>Defense</td>
-                    <td>氷の壁による封鎖。一度突破された拠点を再封鎖できる唯一の存在。</td>
+                    <td>氷の防壁を作成。破壊された拠点入口を即座に修復できる唯一無二の防衛能力を持つ。</td>
+                    <td>Ranger</td>
                 </tr>
                 <tr>
                     <td class="tier-a">A</td>
-                    <td>Mara (マーラ)</td>
+                    <td><strong>Mara</strong><br>(マーラ)</td>
                     <td>Support</td>
-                    <td>モバイル・リスポーン。前線に復活地点を作ることで、攻勢を途切れさせない。</td>
+                    <td>味方に持続回復とシールドを付与。全滅を防ぐための「モバイルリスポーン」設置が強力。</td>
+                    <td>Dynasty</td>
+                </tr>
+                <tr>
+                    <td class="tier-a">A</td>
+                    <td><strong>Vane</strong><br>(ヴェイン)</td>
+                    <td>Recon</td>
+                    <td>影の鴉を放ち、広範囲の敵をマーキング。敵の潜伏場所や罠を可視化するため、奇襲防止に。</td>
+                    <td>Ranger</td>
+                </tr>
+                <tr>
+                    <td class="tier-b">B</td>
+                    <td><strong>Gideon</strong><br>(ギデオン)</td>
+                    <td>Tank</td>
+                    <td>巨大な盾を構え味方を守る。正面突破には強いが、機動力が低く現在のスピードメタでは苦戦。</td>
+                    <td>Big Rig</td>
+                </tr>
+                <tr>
+                    <td class="tier-b">B</td>
+                    <td><strong>Nyx</strong><br>(ニクス)</td>
+                    <td>Support</td>
+                    <td>重力トラップで敵を拘束する。防衛でのコンボ（Redmaneの爆発と合わせる等）が必要で、連携重視。</td>
+                    <td>Vanguard</td>
                 </tr>
             </tbody>
         </table>
