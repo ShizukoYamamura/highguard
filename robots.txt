@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://highguard.vercel.app/sitemap.xml
+Sitemap: https://highguard.yamastudio.net/sitemap.xml
